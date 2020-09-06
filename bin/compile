@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "-----> Installing zlib 1.2.9"
+
+curl -l -O https://www.zlib.net/fossils/zlib-1.2.9.tar.gz
+#wget https://www.zlib.net/zlib-1.2.11.tar.gz
+tar -xvzf zlib-1.2.9.tar.gz
+cd zlib-1.2.9
+./configure
+make
+make install
